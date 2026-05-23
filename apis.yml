@@ -1,0 +1,172 @@
+aid: friendly-captcha
+name: Friendly Captcha
+description: |
+  Friendly Captcha is a privacy-first, GDPR-compliant bot protection
+  service from Germany that uses proof-of-work cryptographic puzzles
+  instead of image-labeling challenges. The widget solves a puzzle in
+  the background while a user fills out a form, then submits a token
+  the server validates against the Friendly Captcha siteverify endpoint.
+  The result includes a risk verdict and additional signal intelligence
+  (IP, bot detection, browser identification, anonymization detection).
+  Friendly Captcha publishes open-source widgets and framework
+  integrations for React, Vue, and Angular, plus pre-built plugins for
+  WordPress, Magento, and other CMS platforms.
+type: Index
+position: Provider
+access: Public
+image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+tags:
+  - CAPTCHA
+  - Bot Defense
+  - Privacy
+  - Proof of Work
+  - GDPR
+  - European Hosting
+  - Accessibility
+url: https://raw.githubusercontent.com/api-evangelist/friendly-captcha/refs/heads/main/apis.yml
+created: '2026-05-23'
+modified: '2026-05-23'
+specificationVersion: '0.20'
+apis:
+  - aid: friendly-captcha:siteverify
+    name: Friendly Captcha Siteverify API
+    description: |
+      The siteverify endpoint validates a Friendly Captcha solution
+      token. The server POSTs the token and API key (with optional
+      sitekey) and receives a JSON response indicating success, risk
+      score, IP intelligence, bot detection signals, and any error
+      codes. This is the canonical server-side check for protected
+      form submissions and API calls.
+    humanURL: https://developer.friendlycaptcha.com/docs/v2/getting-started/verify
+    baseURL: https://global.frcapi.com/api/v2/captcha/siteverify
+    tags:
+      - Siteverify
+      - Token Verification
+      - Risk Signals
+    properties:
+      - type: Documentation
+        url: https://developer.friendlycaptcha.com/docs/v2/getting-started/verify
+      - type: APIReference
+        url: https://developer.friendlycaptcha.com/docs/v2/api-reference
+      - type: EndpointURL
+        url: https://global.frcapi.com/api/v2/captcha/siteverify
+  - aid: friendly-captcha:widget
+    name: Friendly Captcha Widget
+    description: |
+      The Friendly Captcha widget is the JavaScript component that runs
+      the proof-of-work puzzle in the browser and produces a solution
+      token. It is configured via a script tag and a div with the
+      sitekey and API endpoint, and can run automatically or on demand.
+    humanURL: https://developer.friendlycaptcha.com/docs/v2/getting-started/widget
+    baseURL: https://developer.friendlycaptcha.com/docs/v2/getting-started/widget
+    tags:
+      - JavaScript
+      - Widget
+      - Proof of Work
+      - Frontend
+    properties:
+      - type: Documentation
+        url: https://developer.friendlycaptcha.com/docs/v2/getting-started/widget
+      - type: Repository
+        url: https://github.com/FriendlyCaptcha/friendly-challenge
+      - type: Package
+        url: https://www.npmjs.com/package/friendly-challenge
+  - aid: friendly-captcha:framework-sdks
+    name: Friendly Captcha Framework SDKs
+    description: |
+      Friendly Captcha publishes open-source wrappers for React, Vue,
+      and Angular that expose the widget as an idiomatic component in
+      each framework, handling lifecycle, callbacks, and token flow.
+    humanURL: https://developer.friendlycaptcha.com/docs/v2/integrations
+    baseURL: https://developer.friendlycaptcha.com/docs/v2/integrations
+    tags:
+      - React
+      - Vue
+      - Angular
+      - SDK
+    properties:
+      - type: Documentation
+        url: https://developer.friendlycaptcha.com/docs/v2/integrations
+      - type: SDKReact
+        url: https://github.com/FriendlyCaptcha/friendly-captcha-react
+      - type: SDKVue
+        url: https://github.com/FriendlyCaptcha/friendly-captcha-vue
+      - type: SDKAngular
+        url: https://github.com/FriendlyCaptcha/friendly-captcha-angular
+      - type: GitHubOrganization
+        url: https://github.com/FriendlyCaptcha
+  - aid: friendly-captcha:plugins
+    name: Friendly Captcha CMS Plugins
+    description: |
+      Pre-built plugins integrate Friendly Captcha into WordPress,
+      Magento, and other CMS platforms, letting non-developers add
+      privacy-preserving bot defense to common forms without writing
+      code.
+    humanURL: https://friendlycaptcha.com/integrations/
+    baseURL: https://friendlycaptcha.com
+    tags:
+      - WordPress
+      - Magento
+      - CMS Plugin
+    properties:
+      - type: IntegrationsPage
+        url: https://friendlycaptcha.com/integrations/
+features:
+  - name: Proof-of-Work Verification
+    description: Cryptographic puzzles run silently in the background instead of asking users to label images.
+  - name: Privacy-First Design
+    description: No tracking cookies, GDPR-compliant by default, and EU-hosted endpoints available.
+  - name: Open-Source Widget
+    description: The friendly-challenge widget is published as open source.
+  - name: Framework SDKs
+    description: First-party React, Vue, and Angular integrations.
+  - name: Accessibility
+    description: Verification requires no user gesture, removing accessibility barriers from image CAPTCHAs.
+  - name: Risk Signal API
+    description: Siteverify responses include risk scores, IP intelligence, and bot signals.
+useCases:
+  - name: Form Protection
+    description: Gate signup, contact, and login forms behind a proof-of-work challenge.
+  - name: API Abuse Prevention
+    description: Require a Friendly Captcha token before accepting unauthenticated API requests.
+  - name: GDPR-Sensitive Deployments
+    description: Replace third-country CAPTCHA services with an EU-hosted, privacy-first alternative.
+  - name: Accessibility-First Forms
+    description: Protect forms without imposing image-labeling challenges that exclude some users.
+  - name: CMS Site Protection
+    description: Add bot defense to WordPress, Magento, and other CMS sites via prebuilt plugins.
+integrations:
+  - name: React
+  - name: Vue
+  - name: Angular
+  - name: WordPress
+  - name: Magento
+  - name: HubSpot
+  - name: Drupal
+authentication:
+  - type: SiteKey
+    description: Public sitekey embedded in the widget identifies the protected property.
+  - type: APIKey
+    description: Server-side API key used to call the siteverify endpoint.
+common:
+  - type: Website
+    url: https://friendlycaptcha.com/
+  - type: Documentation
+    url: https://developer.friendlycaptcha.com/
+  - type: APIReference
+    url: https://developer.friendlycaptcha.com/docs/v2/api-reference
+  - type: Pricing
+    url: https://friendlycaptcha.com/pricing/
+  - type: Integrations
+    url: https://friendlycaptcha.com/integrations/
+  - type: GitHubOrganization
+    url: https://github.com/FriendlyCaptcha
+  - type: Blog
+    url: https://friendlycaptcha.com/insights/
+  - type: Privacy
+    url: https://friendlycaptcha.com/legal/privacy-end-users/
+  - type: Contact
+    url: https://friendlycaptcha.com/contact/
+maintainers:
+  - FN: Kin Lane
+    email: kin@apievangelist.com
