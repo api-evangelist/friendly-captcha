@@ -1,0 +1,100 @@
+openapi: 3.1.0
+info:
+  title: Friendly Captcha Siteverify API
+  version: "v2"
+  description: |
+    Best-effort OpenAPI 3.1 description of the Friendly Captcha v2 siteverify
+    endpoint, which validates a Friendly Captcha solution token submitted with
+    a protected form or API request.
+  contact:
+    name: Friendly Captcha Developer Docs
+    url: https://developer.friendlycaptcha.com/docs/v2/getting-started/verify
+servers:
+  - url: https://global.frcapi.com
+    description: Global endpoint
+  - url: https://eu.frcapi.com
+    description: EU-hosted endpoint
+security:
+  - apiKey: []
+tags:
+  - name: Siteverify
+paths:
+  /api/v2/captcha/siteverify:
+    post:
+      tags: [Siteverify]
+      operationId: siteverify
+      summary: Verify a Friendly Captcha response token
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: { $ref: "#/components/schemas/SiteverifyRequest" }
+          application/x-www-form-urlencoded:
+            schema: { $ref: "#/components/schemas/SiteverifyRequest" }
+      responses:
+        "200":
+          description: Verification performed (check the success field)
+          content:
+            application/json:
+              schema: { $ref: "#/components/schemas/SiteverifyResponse" }
+        "401":
+          description: Missing or invalid API key
+          content:
+            application/json:
+              schema: { $ref: "#/components/schemas/ErrorResponse" }
+components:
+  securitySchemes:
+    apiKey:
+      type: apiKey
+      in: header
+      name: X-API-Key
+      description: API key created in the Friendly Captcha dashboard
+  schemas:
+    SiteverifyRequest:
+      type: object
+      required: [response]
+      properties:
+        response:
+          type: string
+          description: The response value submitted in the frc-captcha-response field
+        sitekey:
+          type: string
+          description: Optional sitekey to verify the puzzle was issued for
+    SiteverifyResponse:
+      type: object
+      required: [success]
+      properties:
+        success:
+          type: boolean
+          description: Whether the captcha solution was valid
+        data:
+          type: object
+          properties:
+            event_id: { type: string }
+            challenge:
+              type: object
+              properties:
+                timestamp: { type: string, format: date-time }
+                origin: { type: string }
+            risk_intelligence:
+              type: object
+              nullable: true
+              additionalProperties: true
+        error:
+          $ref: "#/components/schemas/ErrorBody"
+    ErrorBody:
+      type: object
+      properties:
+        error_code:
+          type: string
+          description: Machine-readable error code (e.g. auth_required, auth_invalid, response_invalid, response_timeout, response_duplicate)
+        detail:
+          type: string
+    ErrorResponse:
+      type: object
+      properties:
+        success:
+          type: boolean
+          enum: [false]
+        error:
+          $ref: "#/components/schemas/ErrorBody"
