@@ -167,6 +167,8 @@ common:
     url: https://friendlycaptcha.com/legal/privacy-end-users/
   - type: Contact
     url: https://friendlycaptcha.com/contact/
+  - type: LLMsTxt
+    url: https://developer.friendlycaptcha.com/llms.txt
 maintainers:
   - FN: Kin Lane
     email: kin@apievangelist.com
