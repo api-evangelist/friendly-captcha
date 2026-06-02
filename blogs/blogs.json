@@ -1,0 +1,14 @@
+{
+  "repo": "friendly-captcha",
+  "feeds": [
+    {
+      "source": "https://github.com/FriendlyCaptcha",
+      "feed_url": "https://github.com/FriendlyCaptcha",
+      "title": "",
+      "saved": 0,
+      "method": "none"
+    }
+  ],
+  "post_count": 0,
+  "fetched": "2026-06-01T23:35:02Z"
+}
