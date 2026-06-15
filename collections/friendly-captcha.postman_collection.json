@@ -1,0 +1,241 @@
+{
+  "item": [
+    {
+      "id": "dbab8cc9-1a73-46c2-85a5-c5214224abe8",
+      "name": "Siteverify",
+      "description": {
+        "content": "",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "b1233c1c-a922-499c-91db-90bf4f16ef68",
+          "name": "Verify a Friendly Captcha response token",
+          "request": {
+            "name": "Verify a Friendly Captcha response token",
+            "description": {},
+            "url": {
+              "path": [
+                "api",
+                "v2",
+                "captcha",
+                "siteverify"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/x-www-form-urlencoded"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "POST",
+            "auth": null,
+            "body": {
+              "mode": "urlencoded",
+              "urlencoded": [
+                {
+                  "disabled": false,
+                  "key": "response",
+                  "value": "<string>",
+                  "description": "(Required) The response value submitted in the frc-captcha-response field"
+                },
+                {
+                  "disabled": false,
+                  "key": "sitekey",
+                  "value": "<string>",
+                  "description": "Optional sitekey to verify the puzzle was issued for"
+                }
+              ]
+            }
+          },
+          "response": [
+            {
+              "id": "1dd86ab8-6295-4c90-a4eb-55f9bb0f62bd",
+              "name": "Verification performed (check the success field)",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "api",
+                    "v2",
+                    "captcha",
+                    "siteverify"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "X-API-Key",
+                    "value": "<API Key>"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "urlencoded",
+                  "urlencoded": [
+                    {
+                      "disabled": false,
+                      "description": {
+                        "content": "(Required) The response value submitted in the frc-captcha-response field",
+                        "type": "text/plain"
+                      },
+                      "key": "response",
+                      "value": "<string>"
+                    },
+                    {
+                      "disabled": false,
+                      "description": {
+                        "content": "Optional sitekey to verify the puzzle was issued for",
+                        "type": "text/plain"
+                      },
+                      "key": "sitekey",
+                      "value": "<string>"
+                    }
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"success\": false,\n  \"data\": {\n    \"event_id\": \"string\",\n    \"challenge\": {\n      \"timestamp\": \"2012-06-27T18:27:58.978Z\",\n      \"origin\": \"string\"\n    },\n    \"risk_intelligence\": {\n      \"key_0\": false,\n      \"key_1\": 4451\n    }\n  },\n  \"error\": {\n    \"error_code\": \"string\",\n    \"detail\": \"string\"\n  }\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "e30531c2-13f5-44fb-b579-2f8817b0cddc",
+              "name": "Missing or invalid API key",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "api",
+                    "v2",
+                    "captcha",
+                    "siteverify"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "X-API-Key",
+                    "value": "<API Key>"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "urlencoded",
+                  "urlencoded": [
+                    {
+                      "disabled": false,
+                      "description": {
+                        "content": "(Required) The response value submitted in the frc-captcha-response field",
+                        "type": "text/plain"
+                      },
+                      "key": "response",
+                      "value": "<string>"
+                    },
+                    {
+                      "disabled": false,
+                      "description": {
+                        "content": "Optional sitekey to verify the puzzle was issued for",
+                        "type": "text/plain"
+                      },
+                      "key": "sitekey",
+                      "value": "<string>"
+                    }
+                  ]
+                }
+              },
+              "status": "Unauthorized",
+              "code": 401,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"success\": false,\n  \"error\": {\n    \"error_code\": \"string\",\n    \"detail\": \"string\"\n  }\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "type": "string",
+      "value": "https://global.frcapi.com",
+      "key": "baseUrl"
+    }
+  ],
+  "auth": {
+    "type": "apikey",
+    "apikey": [
+      {
+        "key": "key",
+        "value": "X-API-Key"
+      },
+      {
+        "key": "value",
+        "value": "{{apiKey}}"
+      },
+      {
+        "key": "in",
+        "value": "header"
+      }
+    ]
+  },
+  "info": {
+    "_postman_id": "0c12c071-99cc-4790-90e3-d0f7bd3bde9a",
+    "name": "Friendly Captcha Siteverify API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "Best-effort OpenAPI 3.1 description of the Friendly Captcha v2 siteverify\nendpoint, which validates a Friendly Captcha solution token submitted with\na protected form or API request.\n\n\nContact Support:\n Name: Friendly Captcha Developer Docs",
+      "type": "text/plain"
+    }
+  }
+}
