@@ -2,11 +2,11 @@
   "repo": "friendly-captcha",
   "feeds": [
     {
-      "source": "https://friendlycaptcha.com/insights/",
+      "source": "https://friendlycaptcha.com/feed/",
       "feed_url": "https://friendlycaptcha.com/feed/",
       "title": "",
-      "saved": 2,
-      "method": "discovered"
+      "saved": 0,
+      "method": "feed"
     },
     {
       "source": "https://github.com/FriendlyCaptcha",
@@ -17,5 +17,5 @@
     }
   ],
   "post_count": 2,
-  "fetched": "2026-06-14T20:42:17Z"
+  "fetched": "2026-06-27T12:03:07Z"
 }
