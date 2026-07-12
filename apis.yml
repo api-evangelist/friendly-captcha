@@ -149,6 +149,10 @@ authentication:
   - type: APIKey
     description: Server-side API key used to call the siteverify endpoint.
 common:
+  - type: DomainSecurity
+    url: security/friendly-captcha-domain-security.yml
+  - type: Authentication
+    url: authentication/friendly-captcha-authentication.yml
   - type: Website
     url: https://friendlycaptcha.com/
   - type: Documentation

@@ -1,0 +1,16 @@
+generated: '2026-07-11'
+method: derived
+source: openapi/friendly-captcha-openapi.yml
+summary:
+  types:
+  - apiKey
+  api_key_in:
+  - header
+schemes:
+- name: apiKey
+  type: apiKey
+  in: header
+  parameter: X-API-Key
+  description: API key created in the Friendly Captcha dashboard
+  sources:
+  - openapi/friendly-captcha-openapi.yml
