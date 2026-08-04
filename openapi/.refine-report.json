@@ -1,0 +1,14 @@
+{
+  "provider": "friendly-captcha",
+  "sources": [
+    "friendly-captcha-siteverify-api-openapi.yml"
+  ],
+  "outputs": [
+    "friendly-captcha-siteverify-api-openapi.yml"
+  ],
+  "archived": [],
+  "errors": [],
+  "warnings": [],
+  "notes": [],
+  "skipped": []
+}
