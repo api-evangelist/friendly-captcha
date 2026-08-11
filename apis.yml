@@ -185,6 +185,11 @@ authentication:
   - type: APIKey
     description: Server-side API key used to call the siteverify endpoint.
 common:
+  - type: IssueTracker
+    url: https://github.com/FriendlyCaptcha/friendly-challenge/issues
+  - type: License
+    name: MIT
+    url: https://github.com/FriendlyCaptcha/friendly-challenge/blob/master/LICENSE
   - type: AgenticAccess
     url: agentic-access/friendly-captcha-agentic-access.yml
   - type: DomainSecurity
