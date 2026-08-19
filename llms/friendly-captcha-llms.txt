@@ -1,0 +1,199 @@
+# Friendly Captcha Developer Hub
+
+> Documentation and tutorials for integrating Friendly Captcha — widget SDK, server-side validation, risk intelligence, and enterprise features.
+
+
+## docs
+
+
+### v2
+
+Friendly Captcha is a service that protects websites from bots and abuse in a privacy-friendly and accessible way. To learn more about the company or service, you can visit the Friendly Captcha website.
+
+- [Introduction](/docs/v2.md): Friendly Captcha is a service that protects websites from bots and abuse in a privacy-friendly and accessible way. To learn more about the company or service, you can visit the Friendly Captcha website.
+- [Server-side Validation](/docs/v2/api.md): Authentication
+- [Authentication](/docs/v2/api/authentication.md): To make requests to the Friendly Captcha API you need to prove who you are. You do this by passing an API key in a header.
+- [/api/v2/captcha/siteverify](/docs/v2/api/siteverify.md): The siteverify endpoint is used to verify captcha responses. A captcha response is the value that is embedded in your form by the captcha widget when the challenge has been completed.
+- [Customizing the Widget Banner Link](/docs/v2/customizing-widget-banner-link.md): While the widget's banner link color cannot be customized through the dashboard's theme settings, you can easily modify it using CSS on your webpage.
+- [Enterprise](/docs/v2/enterprise.md): Friendly Captcha is a service that protects websites from bots and abuse in a privacy-friendly and accessible way.
+- [Compliance+ Add-On](/docs/v2/enterprise/compliance-plus-add-on.md): The Friendly Captcha Compliance+ Add-On is an optional extra on the Enterprise plan. It is tailor-made to help you reduce compliance effort and risk.
+- [Audit Logs](/docs/v2/enterprise/compliance-plus-add-on/audit-logs.md): The Audit Logs feature is part of the Compliance+ Add-On.
+- [Enhanced Access Control](/docs/v2/enterprise/compliance-plus-add-on/enhanced-access-control.md): The Enhanced Access Control feature is part of the Compliance+ Add-On.
+- [Single Sign-On (SSO)](/docs/v2/enterprise/compliance-plus-add-on/single-sign-on.md): The Single Sign-On feature is part of the Compliance+ Add-On.
+- [Friendly Guard](/docs/v2/friendly-guard.md): <div style={{
+- [Getting Started](/docs/v2/getting-started.md): Friendly Captcha is a service that protects your websites and applications from automated abuse.
+- [Install the widget](/docs/v2/getting-started/install.md): Option A: HTML Scripts
+- [Create a sitekey](/docs/v2/getting-started/setup.md): Log in to your Friendly Captcha account and head to the Applications page.
+- [Verify the response](/docs/v2/getting-started/verify.md): When the captcha challenge is completed by the user, the user's browser receives a piece of text that proves that they completed the challenge. This proof is called the response.
+- [Guides](/docs/v2/guides.md): Advanced
+- [Automated Testing](/docs/v2/guides/automated-testing.md): Testing can be at odds with a captcha you add to your website or app. Perhaps you use automated testing tools like Cypress, Selenium, or Puppeteer.
+- [Browser Support](/docs/v2/guides/browser-support.md): All modern browsers are supported, on both mobile and desktop, all releases up to at least 8 years old.
+- [Content Security Policy (CSP)](/docs/v2/guides/csp.md): Content Security Policy is a way to secure your website from cross-site scripting (XSS).
+- [Dedicated EU Endpoint](/docs/v2/guides/eu-endpoint.md): By default the FriendlyCaptcha widget talks to our global service served from all over the world to retrieve CAPTCHA challenges. Depending on your user's geography, this request may be served from outside the EU.
+- [Invisible CAPTCHA](/docs/v2/guides/invisible-captcha.md): To create a fully invisible user experience, it is possible to hide the Friendly Captcha widget on your site. Before doing so, there are some considerations to make. This guide will explain the considerations and then show how to safely hide the widget.
+- [Language Detection](/docs/v2/guides/localization.md): If your website is in German it makes sense to have the widget in German too.
+- [Migrating from hCaptcha](/docs/v2/guides/migrating-from-hcaptcha.md): Switching from hCaptcha to Friendly Captcha is straightforward.
+- [Migrating from reCAPTCHA](/docs/v2/guides/migrating-from-recaptcha.md): Switching from Google's reCAPTCHA (v2) to Friendly Captcha is straightforward.
+- [Risk-Based Authentication using Risk Intelligence](/docs/v2/guides/risk-based-authentication-using-risk-intelligence.md): This guide shows how to build a simple risk-based authentication flow using Risk Intelligence. Risk-based authentication means using signals from the browsing session to make logging in more difficult (or easier) depending on the perceived risk level. In this particular example, we will use Risk Intelligence data to require an additional confirmation when the user is logging in from an unrecognized browser.
+- [Versioning and Immutability](/docs/v2/guides/sdk-versioning.md): How we version and publish the Friendly Captcha browser SDK, and how you can pin and verify the exact code that runs on your website.
+- [Self-Hosted Endpoint](/docs/v2/guides/self-hosted-endpoint.md): The Self-Hosted Endpoint feature is only available for Friendly Captcha v2.
+- [Upgrading from v1 to v2](/docs/v2/guides/upgrading-from-v1.md): This guide describes how to upgrade from v1 to v2 of Friendly Captcha.
+- [Backend Integration](/docs/v2/guides/upgrading-from-v1/backend-integration.md): 1. Change the field name in your forms
+- [Client (JavaScript API)](/docs/v2/guides/upgrading-from-v1/javascript-api.md): 1. Install the new SDK
+- [Client (CDN script)](/docs/v2/guides/upgrading-from-v1/script.md): This guide runs you through the changes you will have to make when switching from version 1 to version 2 of the Friendly Captcha widget if you are using the script tags.
+- [Captcha Warning](/docs/v2/guides/widget-warning.md): Friendly Captcha may display a warning message that indicates billing problems or other misconfigurations. This page explains what each warning means and how to resolve it.
+- [Risk Intelligence](/docs/v2/risk-intelligence.md): Risk Intelligence helps make decisions about the trustworthiness of users interacting with your services.
+- [Format](/docs/v2/risk-intelligence/format.md): Risk Intelligence data is returned in a structured JSON format that includes various risk signals and scores. The exact structure of the data may vary depending on which modules you have enabled on your account (as of writing, all modules are included by default).
+- [Getting Started with Risk Intelligence](/docs/v2/risk-intelligence/getting-started.md): There are two parts to getting Risk Intelligence data. First, you generate a Risk Intelligence token**_ in your project's front-end. Second, you use that token to retrieve Risk Intelligence data_ from the Friendly Captcha API via your project's back-end.
+- [Generate a Risk Intelligence token](/docs/v2/risk-intelligence/getting-started/generate.md): You can generate a token directly using JavaScript, or you can use an HTML element to automatically generate a token and embed it in a `` element.
+- [Retrieve Risk Intelligence data](/docs/v2/risk-intelligence/getting-started/retrieve.md): To retrieve Risk Intelligence data using a token, you need to send a request containing the token authenticated by the Friendly Captcha API key you created in the first step.
+- [Create a sitekey and API key](/docs/v2/risk-intelligence/getting-started/setup.md): Sitekey
+- [Risk Intelligence On Captcha Challenge](/docs/v2/risk-intelligence/on-captcha-challenge.md): As a paid add-on we offer Risk Intelligence data when verifying any Friendly Captcha v2 challenge. This feature simplifies your integration by allowing you to get risk scores and signals about the user who solved the captcha challenge without needing to make a separate API call to our Risk Intelligence API or change your frontend integration.
+- [Use Cases](/docs/v2/risk-intelligence/use-cases.md): Risk Intelligence data can be used in various ways to enhance the security and fraud detection capabilities of your applications. Here we describe some common use cases for Risk Intelligence data.
+- [Widget SDK](/docs/v2/sdk.md): The SDK is the code you add to your website to display captcha widgets on your website.
+- [Configuration](/docs/v2/sdk/configuration.md): There are two ways you can configure the behavior of the widget.
+- [Events](/docs/v2/sdk/events.md): The captcha widget emits DOM events which allow you to write code that reacts to changes in the widget.
+- [Lifecycle](/docs/v2/sdk/lifecycle.md): The widget has a fixed set of states it can be in.
+- [API](/docs/v2/sdk/reference.md): Home
+- [sdk](/docs/v2/sdk/reference/sdk.md): @friendlycaptcha/sdk
+- [APIEndpoint](/docs/v2/sdk/reference/sdk.apiendpoint.md): @friendlycaptcha/sdk &gt; APIEndpoint
+- [CreateWidgetOptions](/docs/v2/sdk/reference/sdk.createwidgetoptions.md): @friendlycaptcha/sdk &gt; CreateWidgetOptions
+- [CreateWidgetOptions.apiEndpoint](/docs/v2/sdk/reference/sdk.createwidgetoptions.apiendpoint.md): @friendlycaptcha/sdk &gt; CreateWidgetOptions &gt; apiEndpoint
+- [CreateWidgetOptions.element](/docs/v2/sdk/reference/sdk.createwidgetoptions.element.md): @friendlycaptcha/sdk &gt; CreateWidgetOptions &gt; element
+- [CreateWidgetOptions.formFieldName](/docs/v2/sdk/reference/sdk.createwidgetoptions.formfieldname.md): @friendlycaptcha/sdk &gt; CreateWidgetOptions &gt; formFieldName
+- [CreateWidgetOptions.language](/docs/v2/sdk/reference/sdk.createwidgetoptions.language.md): @friendlycaptcha/sdk &gt; CreateWidgetOptions &gt; language
+- [CreateWidgetOptions.sitekey](/docs/v2/sdk/reference/sdk.createwidgetoptions.sitekey.md): @friendlycaptcha/sdk &gt; CreateWidgetOptions &gt; sitekey
+- [CreateWidgetOptions.startMode](/docs/v2/sdk/reference/sdk.createwidgetoptions.startmode.md): @friendlycaptcha/sdk &gt; CreateWidgetOptions &gt; startMode
+- [CreateWidgetOptions.theme](/docs/v2/sdk/reference/sdk.createwidgetoptions.theme.md): @friendlycaptcha/sdk &gt; CreateWidgetOptions &gt; theme
+- [FRCEventData](/docs/v2/sdk/reference/sdk.frceventdata.md): @friendlycaptcha/sdk &gt; FRCEventData
+- [FRCEventMap](/docs/v2/sdk/reference/sdk.frceventmap.md): @friendlycaptcha/sdk &gt; FRCEventMap
+- [FRCEventMap."frc:riskintelligence.complete"](/docs/v2/sdk/reference/sdk.frceventmap._frc_riskintelligence.complete_.md): @friendlycaptcha/sdk &gt; FRCEventMap &gt; "frc:riskintelligence.complete"
+- [FRCEventMap."frc:riskintelligence.error"](/docs/v2/sdk/reference/sdk.frceventmap._frc_riskintelligence.error_.md): @friendlycaptcha/sdk &gt; FRCEventMap &gt; "frc:riskintelligence.error"
+- [FRCEventMap."frc:riskintelligence.expire"](/docs/v2/sdk/reference/sdk.frceventmap._frc_riskintelligence.expire_.md): @friendlycaptcha/sdk &gt; FRCEventMap &gt; "frc:riskintelligence.expire"
+- [FRCEventMap."frc:widget.complete"](/docs/v2/sdk/reference/sdk.frceventmap._frc_widget.complete_.md): @friendlycaptcha/sdk &gt; FRCEventMap &gt; "frc:widget.complete"
+- [FRCEventMap."frc:widget.error"](/docs/v2/sdk/reference/sdk.frceventmap._frc_widget.error_.md): @friendlycaptcha/sdk &gt; FRCEventMap &gt; "frc:widget.error"
+- [FRCEventMap."frc:widget.expire"](/docs/v2/sdk/reference/sdk.frceventmap._frc_widget.expire_.md): @friendlycaptcha/sdk &gt; FRCEventMap &gt; "frc:widget.expire"
+- [FRCEventMap."frc:widget.reset"](/docs/v2/sdk/reference/sdk.frceventmap._frc_widget.reset_.md): @friendlycaptcha/sdk &gt; FRCEventMap &gt; "frc:widget.reset"
+- [FRCEventMap."frc:widget.statechange"](/docs/v2/sdk/reference/sdk.frceventmap._frc_widget.statechange_.md): @friendlycaptcha/sdk &gt; FRCEventMap &gt; "frc:widget.statechange"
+- [FRCEventName](/docs/v2/sdk/reference/sdk.frceventname.md): @friendlycaptcha/sdk &gt; FRCEventName
+- [FRCRiskIntelligenceCompleteEvent](/docs/v2/sdk/reference/sdk.frcriskintelligencecompleteevent.md): @friendlycaptcha/sdk &gt; FRCRiskIntelligenceCompleteEvent
+- [FRCRiskIntelligenceCompleteEventData](/docs/v2/sdk/reference/sdk.frcriskintelligencecompleteeventdata.md): @friendlycaptcha/sdk &gt; FRCRiskIntelligenceCompleteEventData
+- [FRCRiskIntelligenceCompleteEventData.expiresAt](/docs/v2/sdk/reference/sdk.frcriskintelligencecompleteeventdata.expiresat.md): @friendlycaptcha/sdk &gt; FRCRiskIntelligenceCompleteEventData &gt; expiresAt
+- [FRCRiskIntelligenceCompleteEventData.name](/docs/v2/sdk/reference/sdk.frcriskintelligencecompleteeventdata.name.md): @friendlycaptcha/sdk &gt; FRCRiskIntelligenceCompleteEventData &gt; name
+- [FRCRiskIntelligenceCompleteEventData.token](/docs/v2/sdk/reference/sdk.frcriskintelligencecompleteeventdata.token.md): @friendlycaptcha/sdk &gt; FRCRiskIntelligenceCompleteEventData &gt; token
+- [FRCRiskIntelligenceCompleteEventName](/docs/v2/sdk/reference/sdk.frcriskintelligencecompleteeventname.md): @friendlycaptcha/sdk &gt; FRCRiskIntelligenceCompleteEventName
+- [FRCRiskIntelligenceErrorEvent](/docs/v2/sdk/reference/sdk.frcriskintelligenceerrorevent.md): @friendlycaptcha/sdk &gt; FRCRiskIntelligenceErrorEvent
+- [FRCRiskIntelligenceErrorEventData](/docs/v2/sdk/reference/sdk.frcriskintelligenceerroreventdata.md): @friendlycaptcha/sdk &gt; FRCRiskIntelligenceErrorEventData
+- [FRCRiskIntelligenceErrorEventData.error](/docs/v2/sdk/reference/sdk.frcriskintelligenceerroreventdata.error.md): @friendlycaptcha/sdk &gt; FRCRiskIntelligenceErrorEventData &gt; error
+- [FRCRiskIntelligenceErrorEventData.name](/docs/v2/sdk/reference/sdk.frcriskintelligenceerroreventdata.name.md): @friendlycaptcha/sdk &gt; FRCRiskIntelligenceErrorEventData &gt; name
+- [FRCRiskIntelligenceErrorEventName](/docs/v2/sdk/reference/sdk.frcriskintelligenceerroreventname.md): @friendlycaptcha/sdk &gt; FRCRiskIntelligenceErrorEventName
+- [FRCRiskIntelligenceExpireEvent](/docs/v2/sdk/reference/sdk.frcriskintelligenceexpireevent.md): @friendlycaptcha/sdk &gt; FRCRiskIntelligenceExpireEvent
+- [FRCRiskIntelligenceExpireEventData](/docs/v2/sdk/reference/sdk.frcriskintelligenceexpireeventdata.md): @friendlycaptcha/sdk &gt; FRCRiskIntelligenceExpireEventData
+- [FRCRiskIntelligenceExpireEventData.name](/docs/v2/sdk/reference/sdk.frcriskintelligenceexpireeventdata.name.md): @friendlycaptcha/sdk &gt; FRCRiskIntelligenceExpireEventData &gt; name
+- [FRCRiskIntelligenceExpireEventName](/docs/v2/sdk/reference/sdk.frcriskintelligenceexpireeventname.md): @friendlycaptcha/sdk &gt; FRCRiskIntelligenceExpireEventName
+- [FRCWidgetCompleteEvent](/docs/v2/sdk/reference/sdk.frcwidgetcompleteevent.md): @friendlycaptcha/sdk &gt; FRCWidgetCompleteEvent
+- [FRCWidgetCompleteEventData](/docs/v2/sdk/reference/sdk.frcwidgetcompleteeventdata.md): @friendlycaptcha/sdk &gt; FRCWidgetCompleteEventData
+- [FRCWidgetCompleteEventData.id](/docs/v2/sdk/reference/sdk.frcwidgetcompleteeventdata.id.md): @friendlycaptcha/sdk &gt; FRCWidgetCompleteEventData &gt; id
+- [FRCWidgetCompleteEventData.name](/docs/v2/sdk/reference/sdk.frcwidgetcompleteeventdata.name.md): @friendlycaptcha/sdk &gt; FRCWidgetCompleteEventData &gt; name
+- [FRCWidgetCompleteEventData.response](/docs/v2/sdk/reference/sdk.frcwidgetcompleteeventdata.response.md): @friendlycaptcha/sdk &gt; FRCWidgetCompleteEventData &gt; response
+- [FRCWidgetCompleteEventData.state](/docs/v2/sdk/reference/sdk.frcwidgetcompleteeventdata.state.md): @friendlycaptcha/sdk &gt; FRCWidgetCompleteEventData &gt; state
+- [FRCWidgetCompleteEventName](/docs/v2/sdk/reference/sdk.frcwidgetcompleteeventname.md): @friendlycaptcha/sdk &gt; FRCWidgetCompleteEventName
+- [FRCWidgetErrorEventData](/docs/v2/sdk/reference/sdk.frcwidgeterroreventdata.md): @friendlycaptcha/sdk &gt; FRCWidgetErrorEventData
+- [FRCWidgetErrorEventData.error](/docs/v2/sdk/reference/sdk.frcwidgeterroreventdata.error.md): @friendlycaptcha/sdk &gt; FRCWidgetErrorEventData &gt; error
+- [FRCWidgetErrorEventData.id](/docs/v2/sdk/reference/sdk.frcwidgeterroreventdata.id.md): @friendlycaptcha/sdk &gt; FRCWidgetErrorEventData &gt; id
+- [FRCWidgetErrorEventData.name](/docs/v2/sdk/reference/sdk.frcwidgeterroreventdata.name.md): @friendlycaptcha/sdk &gt; FRCWidgetErrorEventData &gt; name
+- [FRCWidgetErrorEventData.response](/docs/v2/sdk/reference/sdk.frcwidgeterroreventdata.response.md): @friendlycaptcha/sdk &gt; FRCWidgetErrorEventData &gt; response
+- [FRCWidgetErrorEventData.state](/docs/v2/sdk/reference/sdk.frcwidgeterroreventdata.state.md): @friendlycaptcha/sdk &gt; FRCWidgetErrorEventData &gt; state
+- [FRCWidgetErrorEventName](/docs/v2/sdk/reference/sdk.frcwidgeterroreventname.md): @friendlycaptcha/sdk &gt; FRCWidgetErrorEventName
+- [FRCWidgetExpireEventData](/docs/v2/sdk/reference/sdk.frcwidgetexpireeventdata.md): @friendlycaptcha/sdk &gt; FRCWidgetExpireEventData
+- [FRCWidgetExpireEventData.id](/docs/v2/sdk/reference/sdk.frcwidgetexpireeventdata.id.md): @friendlycaptcha/sdk &gt; FRCWidgetExpireEventData &gt; id
+- [FRCWidgetExpireEventData.name](/docs/v2/sdk/reference/sdk.frcwidgetexpireeventdata.name.md): @friendlycaptcha/sdk &gt; FRCWidgetExpireEventData &gt; name
+- [FRCWidgetExpireEventData.response](/docs/v2/sdk/reference/sdk.frcwidgetexpireeventdata.response.md): @friendlycaptcha/sdk &gt; FRCWidgetExpireEventData &gt; response
+- [FRCWidgetExpireEventData.state](/docs/v2/sdk/reference/sdk.frcwidgetexpireeventdata.state.md): @friendlycaptcha/sdk &gt; FRCWidgetExpireEventData &gt; state
+- [FRCWidgetExpireEventName](/docs/v2/sdk/reference/sdk.frcwidgetexpireeventname.md): @friendlycaptcha/sdk &gt; FRCWidgetExpireEventName
+- [FRCWidgetResetEventData](/docs/v2/sdk/reference/sdk.frcwidgetreseteventdata.md): @friendlycaptcha/sdk &gt; FRCWidgetResetEventData
+- [FRCWidgetResetEventData.id](/docs/v2/sdk/reference/sdk.frcwidgetreseteventdata.id.md): @friendlycaptcha/sdk &gt; FRCWidgetResetEventData &gt; id
+- [FRCWidgetResetEventData.name](/docs/v2/sdk/reference/sdk.frcwidgetreseteventdata.name.md): @friendlycaptcha/sdk &gt; FRCWidgetResetEventData &gt; name
+- [FRCWidgetResetEventData.response](/docs/v2/sdk/reference/sdk.frcwidgetreseteventdata.response.md): @friendlycaptcha/sdk &gt; FRCWidgetResetEventData &gt; response
+- [FRCWidgetResetEventData.state](/docs/v2/sdk/reference/sdk.frcwidgetreseteventdata.state.md): @friendlycaptcha/sdk &gt; FRCWidgetResetEventData &gt; state
+- [FRCWidgetResetEventData.trigger](/docs/v2/sdk/reference/sdk.frcwidgetreseteventdata.trigger.md): @friendlycaptcha/sdk &gt; FRCWidgetResetEventData &gt; trigger
+- [FRCWidgetResetEventName](/docs/v2/sdk/reference/sdk.frcwidgetreseteventname.md): @friendlycaptcha/sdk &gt; FRCWidgetResetEventName
+- [FRCWidgetStateChangeEvent](/docs/v2/sdk/reference/sdk.frcwidgetstatechangeevent.md): @friendlycaptcha/sdk &gt; FRCWidgetStateChangeEvent
+- [FRCWidgetStateChangeEventData](/docs/v2/sdk/reference/sdk.frcwidgetstatechangeeventdata.md): @friendlycaptcha/sdk &gt; FRCWidgetStateChangeEventData
+- [FRCWidgetStateChangeEventData.error](/docs/v2/sdk/reference/sdk.frcwidgetstatechangeeventdata.error.md): @friendlycaptcha/sdk &gt; FRCWidgetStateChangeEventData &gt; error
+- [FRCWidgetStateChangeEventData.id](/docs/v2/sdk/reference/sdk.frcwidgetstatechangeeventdata.id.md): @friendlycaptcha/sdk &gt; FRCWidgetStateChangeEventData &gt; id
+- [FRCWidgetStateChangeEventData.mode](/docs/v2/sdk/reference/sdk.frcwidgetstatechangeeventdata.mode.md): @friendlycaptcha/sdk &gt; FRCWidgetStateChangeEventData &gt; mode
+- [FRCWidgetStateChangeEventData.name](/docs/v2/sdk/reference/sdk.frcwidgetstatechangeeventdata.name.md): @friendlycaptcha/sdk &gt; FRCWidgetStateChangeEventData &gt; name
+- [FRCWidgetStateChangeEventData.response](/docs/v2/sdk/reference/sdk.frcwidgetstatechangeeventdata.response.md): @friendlycaptcha/sdk &gt; FRCWidgetStateChangeEventData &gt; response
+- [FRCWidgetStateChangeEventData.state](/docs/v2/sdk/reference/sdk.frcwidgetstatechangeeventdata.state.md): @friendlycaptcha/sdk &gt; FRCWidgetStateChangeEventData &gt; state
+- [FRCWidgetStateChangeEventName](/docs/v2/sdk/reference/sdk.frcwidgetstatechangeeventname.md): @friendlycaptcha/sdk &gt; FRCWidgetStateChangeEventName
+- [FRCWidgetWidgetErrorEvent](/docs/v2/sdk/reference/sdk.frcwidgetwidgeterrorevent.md): @friendlycaptcha/sdk &gt; FRCWidgetWidgetErrorEvent
+- [FRCWidgetWidgetExpireEvent](/docs/v2/sdk/reference/sdk.frcwidgetwidgetexpireevent.md): @friendlycaptcha/sdk &gt; FRCWidgetWidgetExpireEvent
+- [FRCWidgetWidgetResetEvent](/docs/v2/sdk/reference/sdk.frcwidgetwidgetresetevent.md): @friendlycaptcha/sdk &gt; FRCWidgetWidgetResetEvent
+- [FriendlyCaptchaSDK](/docs/v2/sdk/reference/sdk.friendlycaptchasdk.md): @friendlycaptcha/sdk &gt; FriendlyCaptchaSDK
+- [FriendlyCaptchaSDK.(constructor)](/docs/v2/sdk/reference/sdk.friendlycaptchasdk._constructor_.md): @friendlycaptcha/sdk &gt; FriendlyCaptchaSDK &gt; (constructor)
+- [FriendlyCaptchaSDK.attach()](/docs/v2/sdk/reference/sdk.friendlycaptchasdk.attach.md): @friendlycaptcha/sdk &gt; FriendlyCaptchaSDK &gt; attach
+- [FriendlyCaptchaSDK.attached](/docs/v2/sdk/reference/sdk.friendlycaptchasdk.attached.md): @friendlycaptcha/sdk &gt; FriendlyCaptchaSDK &gt; attached
+- [FriendlyCaptchaSDK.clear()](/docs/v2/sdk/reference/sdk.friendlycaptchasdk.clear.md): @friendlycaptcha/sdk &gt; FriendlyCaptchaSDK &gt; clear
+- [FriendlyCaptchaSDK.clearRiskIntelligence()](/docs/v2/sdk/reference/sdk.friendlycaptchasdk.clearriskintelligence.md): @friendlycaptcha/sdk &gt; FriendlyCaptchaSDK &gt; clearRiskIntelligence
+- [FriendlyCaptchaSDK.createWidget()](/docs/v2/sdk/reference/sdk.friendlycaptchasdk.createwidget.md): @friendlycaptcha/sdk &gt; FriendlyCaptchaSDK &gt; createWidget
+- [FriendlyCaptchaSDK.getAllRiskIntelligenceHandles()](/docs/v2/sdk/reference/sdk.friendlycaptchasdk.getallriskintelligencehandles.md): @friendlycaptcha/sdk &gt; FriendlyCaptchaSDK &gt; getAllRiskIntelligenceHandles
+- [FriendlyCaptchaSDK.getAllWidgets()](/docs/v2/sdk/reference/sdk.friendlycaptchasdk.getallwidgets.md): @friendlycaptcha/sdk &gt; FriendlyCaptchaSDK &gt; getAllWidgets
+- [FriendlyCaptchaSDK.getWidgetById()](/docs/v2/sdk/reference/sdk.friendlycaptchasdk.getwidgetbyid.md): @friendlycaptcha/sdk &gt; FriendlyCaptchaSDK &gt; getWidgetById
+- [FriendlyCaptchaSDK.riskIntelligence()](/docs/v2/sdk/reference/sdk.friendlycaptchasdk.riskintelligence.md): @friendlycaptcha/sdk &gt; FriendlyCaptchaSDK &gt; riskIntelligence
+- [FriendlyCaptchaSDKOptions](/docs/v2/sdk/reference/sdk.friendlycaptchasdkoptions.md): @friendlycaptcha/sdk &gt; FriendlyCaptchaSDKOptions
+- [FriendlyCaptchaSDKOptions.apiEndpoint](/docs/v2/sdk/reference/sdk.friendlycaptchasdkoptions.apiendpoint.md): @friendlycaptcha/sdk &gt; FriendlyCaptchaSDKOptions &gt; apiEndpoint
+- [FriendlyCaptchaSDKOptions.disableEvalPatching](/docs/v2/sdk/reference/sdk.friendlycaptchasdkoptions.disableevalpatching.md): @friendlycaptcha/sdk &gt; FriendlyCaptchaSDKOptions &gt; disableEvalPatching
+- [FriendlyCaptchaSDKOptions.startAgent](/docs/v2/sdk/reference/sdk.friendlycaptchasdkoptions.startagent.md): @friendlycaptcha/sdk &gt; FriendlyCaptchaSDKOptions &gt; startAgent
+- [RiskIntelligenceClearOptions](/docs/v2/sdk/reference/sdk.riskintelligenceclearoptions.md): @friendlycaptcha/sdk &gt; RiskIntelligenceClearOptions
+- [RiskIntelligenceClearOptions.apiEndpoint](/docs/v2/sdk/reference/sdk.riskintelligenceclearoptions.apiendpoint.md): @friendlycaptcha/sdk &gt; RiskIntelligenceClearOptions &gt; apiEndpoint
+- [RiskIntelligenceClearOptions.sitekey](/docs/v2/sdk/reference/sdk.riskintelligenceclearoptions.sitekey.md): @friendlycaptcha/sdk &gt; RiskIntelligenceClearOptions &gt; sitekey
+- [RiskIntelligenceErrorCode](/docs/v2/sdk/reference/sdk.riskintelligenceerrorcode.md): @friendlycaptcha/sdk &gt; RiskIntelligenceErrorCode
+- [RiskIntelligenceErrorData](/docs/v2/sdk/reference/sdk.riskintelligenceerrordata.md): @friendlycaptcha/sdk &gt; RiskIntelligenceErrorData
+- [RiskIntelligenceErrorData.code](/docs/v2/sdk/reference/sdk.riskintelligenceerrordata.code.md): @friendlycaptcha/sdk &gt; RiskIntelligenceErrorData &gt; code
+- [RiskIntelligenceErrorData.detail](/docs/v2/sdk/reference/sdk.riskintelligenceerrordata.detail.md): @friendlycaptcha/sdk &gt; RiskIntelligenceErrorData &gt; detail
+- [RiskIntelligenceGenerateData](/docs/v2/sdk/reference/sdk.riskintelligencegeneratedata.md): @friendlycaptcha/sdk &gt; RiskIntelligenceGenerateData
+- [RiskIntelligenceGenerateData.expiresAt](/docs/v2/sdk/reference/sdk.riskintelligencegeneratedata.expiresat.md): @friendlycaptcha/sdk &gt; RiskIntelligenceGenerateData &gt; expiresAt
+- [RiskIntelligenceGenerateData.token](/docs/v2/sdk/reference/sdk.riskintelligencegeneratedata.token.md): @friendlycaptcha/sdk &gt; RiskIntelligenceGenerateData &gt; token
+- [RiskIntelligenceHandle](/docs/v2/sdk/reference/sdk.riskintelligencehandle.md): @friendlycaptcha/sdk &gt; RiskIntelligenceHandle
+- [RiskIntelligenceHandle.addEventListener()](/docs/v2/sdk/reference/sdk.riskintelligencehandle.addeventlistener.md): @friendlycaptcha/sdk &gt; RiskIntelligenceHandle &gt; addEventListener
+- [RiskIntelligenceHandle.getData()](/docs/v2/sdk/reference/sdk.riskintelligencehandle.getdata.md): @friendlycaptcha/sdk &gt; RiskIntelligenceHandle &gt; getData
+- [RiskIntelligenceHandle.getElement()](/docs/v2/sdk/reference/sdk.riskintelligencehandle.getelement.md): @friendlycaptcha/sdk &gt; RiskIntelligenceHandle &gt; getElement
+- [RiskIntelligenceHandle.removeEventListener()](/docs/v2/sdk/reference/sdk.riskintelligencehandle.removeeventlistener.md): @friendlycaptcha/sdk &gt; RiskIntelligenceHandle &gt; removeEventListener
+- [RiskIntelligenceOptions](/docs/v2/sdk/reference/sdk.riskintelligenceoptions.md): @friendlycaptcha/sdk &gt; RiskIntelligenceOptions
+- [RiskIntelligenceOptions.apiEndpoint](/docs/v2/sdk/reference/sdk.riskintelligenceoptions.apiendpoint.md): @friendlycaptcha/sdk &gt; RiskIntelligenceOptions &gt; apiEndpoint
+- [RiskIntelligenceOptions.bypassCache](/docs/v2/sdk/reference/sdk.riskintelligenceoptions.bypasscache.md): @friendlycaptcha/sdk &gt; RiskIntelligenceOptions &gt; bypassCache
+- [RiskIntelligenceOptions.sitekey](/docs/v2/sdk/reference/sdk.riskintelligenceoptions.sitekey.md): @friendlycaptcha/sdk &gt; RiskIntelligenceOptions &gt; sitekey
+- [SentinelResponse](/docs/v2/sdk/reference/sdk.sentinelresponse.md): @friendlycaptcha/sdk &gt; SentinelResponse
+- [StartMode](/docs/v2/sdk/reference/sdk.startmode.md): @friendlycaptcha/sdk &gt; StartMode
+- [WidgetErrorCode](/docs/v2/sdk/reference/sdk.widgeterrorcode.md): @friendlycaptcha/sdk &gt; WidgetErrorCode
+- [WidgetErrorData](/docs/v2/sdk/reference/sdk.widgeterrordata.md): @friendlycaptcha/sdk &gt; WidgetErrorData
+- [WidgetErrorData.code](/docs/v2/sdk/reference/sdk.widgeterrordata.code.md): @friendlycaptcha/sdk &gt; WidgetErrorData &gt; code
+- [WidgetErrorData.detail](/docs/v2/sdk/reference/sdk.widgeterrordata.detail.md): @friendlycaptcha/sdk &gt; WidgetErrorData &gt; detail
+- [WidgetErrorData.title](/docs/v2/sdk/reference/sdk.widgeterrordata.title.md): @friendlycaptcha/sdk &gt; WidgetErrorData &gt; title
+- [WidgetHandle](/docs/v2/sdk/reference/sdk.widgethandle.md): @friendlycaptcha/sdk &gt; WidgetHandle
+- [WidgetHandle.addEventListener()](/docs/v2/sdk/reference/sdk.widgethandle.addeventlistener.md): @friendlycaptcha/sdk &gt; WidgetHandle &gt; addEventListener
+- [WidgetHandle.destroy()](/docs/v2/sdk/reference/sdk.widgethandle.destroy.md): @friendlycaptcha/sdk &gt; WidgetHandle &gt; destroy
+- [WidgetHandle.getElement()](/docs/v2/sdk/reference/sdk.widgethandle.getelement.md): @friendlycaptcha/sdk &gt; WidgetHandle &gt; getElement
+- [WidgetHandle.getResponse()](/docs/v2/sdk/reference/sdk.widgethandle.getresponse.md): @friendlycaptcha/sdk &gt; WidgetHandle &gt; getResponse
+- [WidgetHandle.getState()](/docs/v2/sdk/reference/sdk.widgethandle.getstate.md): @friendlycaptcha/sdk &gt; WidgetHandle &gt; getState
+- [WidgetHandle.id](/docs/v2/sdk/reference/sdk.widgethandle.id.md): @friendlycaptcha/sdk &gt; WidgetHandle &gt; id
+- [WidgetHandle.isDestroyed](/docs/v2/sdk/reference/sdk.widgethandle.isdestroyed.md): @friendlycaptcha/sdk &gt; WidgetHandle &gt; isDestroyed
+- [WidgetHandle.removeEventListener()](/docs/v2/sdk/reference/sdk.widgethandle.removeeventlistener.md): @friendlycaptcha/sdk &gt; WidgetHandle &gt; removeEventListener
+- [WidgetHandle.reset()](/docs/v2/sdk/reference/sdk.widgethandle.reset.md): @friendlycaptcha/sdk &gt; WidgetHandle &gt; reset
+- [WidgetHandle.sitekey](/docs/v2/sdk/reference/sdk.widgethandle.sitekey.md): @friendlycaptcha/sdk &gt; WidgetHandle &gt; sitekey
+- [WidgetHandle.start()](/docs/v2/sdk/reference/sdk.widgethandle.start.md): @friendlycaptcha/sdk &gt; WidgetHandle &gt; start
+- [WidgetHandle.startMode](/docs/v2/sdk/reference/sdk.widgethandle.startmode.md): @friendlycaptcha/sdk &gt; WidgetHandle &gt; startMode
+- [WidgetMode](/docs/v2/sdk/reference/sdk.widgetmode.md): @friendlycaptcha/sdk &gt; WidgetMode
+- [WidgetResetOptions](/docs/v2/sdk/reference/sdk.widgetresetoptions.md): @friendlycaptcha/sdk &gt; WidgetResetOptions
+- [WidgetResetTrigger](/docs/v2/sdk/reference/sdk.widgetresettrigger.md): @friendlycaptcha/sdk &gt; WidgetResetTrigger
+- [WidgetState](/docs/v2/sdk/reference/sdk.widgetstate.md): @friendlycaptcha/sdk &gt; WidgetState
+- [Use Cases](/docs/v2/use-cases.md): A collection of articles on various uses for Friendly Captcha.
+- [Account Takeover](/docs/v2/use-cases/account-takeover.md): Account takeover (ATO) is a type of identity theft where an attacker gains unauthorized access to a user's account.
+- [API Protection](/docs/v2/use-cases/api-protection.md): Your websites and apps likely rely on APIs to function. These APIs are vulnerable to abuse and attacks, which can lead to data breaches, service disruptions, and other security issues.
+- [Brute Force Attacks](/docs/v2/use-cases/brute-force-attacks.md): A brute force attack, also known as brute forcing, is an attempt to guess a web user’s credentials by trying every possible combination of characters. For websites and applications, the end goal of a brute force attack is account takeover (ATO), where the attacker gains unauthorized access to a different user's account.
+- [Credential Stuffing](/docs/v2/use-cases/credential-stuffing.md): Credential stuffing is a cyberattack technique where attackers use automated tools to try large numbers of username and password combinations, often obtained from previous data breaches, to gain unauthorized access to user accounts. The goal is to exploit the fact that many people reuse passwords across multiple sites, allowing attackers to compromise accounts on various platforms using the same credentials.
+- [Fake Accounts](/docs/v2/use-cases/fake-accounts.md): Fake accounts are a common problem on platforms, and they can be used for a variety of malicious purposes, such as spreading misinformation, harassing other users, engaging in fraudulent activities, or abusing your service otherwise. These accounts are often created using automated bots, which can quickly generate large numbers of fake accounts to overwhelm a platform.
+- [Payment Fraud](/docs/v2/use-cases/payment-fraud.md): Payment fraud is a significant concern for businesses and consumers alike. It involves unauthorized transactions, identity theft, and various schemes that can lead to financial losses. To combat payment fraud, organizations can implement several strategies:
+- [Spam Protection](/docs/v2/use-cases/spam-protection.md): Spam is a common problem for websites and apps that allow user-generated content or have a public-facing form. Spammers can use automated bots to flood your site with unwanted content, which can degrade the user experience, damage your reputation, and even lead to security issues.
+- [v1 and v2](/docs/v2/versions.md): There are two versions of the Friendly Captcha service, called v1 and v2. The second version contains technical and non-technical enhancements that come from state-of-the-art improvements and learnings from v1.
