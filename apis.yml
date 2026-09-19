@@ -97,6 +97,11 @@ apis:
   baseURL: https://developer.friendlycaptcha.com/docs/v2/getting-started/widget
   tags:
   - JavaScript
+  - Widgets
+  - Proof of Work
+  - Frontend
+  tags_raw:
+  - JavaScript
   - Widget
   - Proof of Work
   - Frontend
