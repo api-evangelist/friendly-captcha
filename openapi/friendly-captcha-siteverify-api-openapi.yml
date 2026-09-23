@@ -1,4 +1,4 @@
-openapi: 3.1.0
+openapi: 3.2.0
 info:
   title: Friendly Captcha Siteverify API
   version: v2
@@ -6,9 +6,7 @@ info:
 
     endpoint, which validates a Friendly Captcha solution token submitted with
 
-    a protected form or API request.
-
-    '
+    a protected form or API request.'
   contact:
     name: Friendly Captcha Developer Docs
     url: https://developer.friendlycaptcha.com/docs/v2/getting-started/verify
@@ -52,6 +50,17 @@ paths:
                 $ref: '#/components/schemas/ErrorResponse'
 components:
   schemas:
+    SiteverifyRequest:
+      type: object
+      required:
+      - response
+      properties:
+        response:
+          type: string
+          description: The response value submitted in the frc-captcha-response field
+        sitekey:
+          type: string
+          description: Optional sitekey to verify the puzzle was issued for
     ErrorResponse:
       type: object
       properties:
@@ -96,17 +105,6 @@ components:
               additionalProperties: true
         error:
           $ref: '#/components/schemas/ErrorBody'
-    SiteverifyRequest:
-      type: object
-      required:
-      - response
-      properties:
-        response:
-          type: string
-          description: The response value submitted in the frc-captcha-response field
-        sitekey:
-          type: string
-          description: Optional sitekey to verify the puzzle was issued for
   securitySchemes:
     apiKey:
       type: apiKey
