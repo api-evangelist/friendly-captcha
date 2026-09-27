@@ -61,23 +61,6 @@ components:
         sitekey:
           type: string
           description: Optional sitekey to verify the puzzle was issued for
-    ErrorResponse:
-      type: object
-      properties:
-        success:
-          type: boolean
-          enum:
-          - false
-        error:
-          $ref: '#/components/schemas/ErrorBody'
-    ErrorBody:
-      type: object
-      properties:
-        error_code:
-          type: string
-          description: Machine-readable error code (e.g. auth_required, auth_invalid, response_invalid, response_timeout, response_duplicate)
-        detail:
-          type: string
     SiteverifyResponse:
       type: object
       required:
@@ -105,6 +88,23 @@ components:
               additionalProperties: true
         error:
           $ref: '#/components/schemas/ErrorBody'
+    ErrorResponse:
+      type: object
+      properties:
+        success:
+          type: boolean
+          enum:
+          - false
+        error:
+          $ref: '#/components/schemas/ErrorBody'
+    ErrorBody:
+      type: object
+      properties:
+        error_code:
+          type: string
+          description: Machine-readable error code (e.g. auth_required, auth_invalid, response_invalid, response_timeout, response_duplicate)
+        detail:
+          type: string
   securitySchemes:
     apiKey:
       type: apiKey

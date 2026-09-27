@@ -149,7 +149,6 @@ apis:
 
     code.
   humanURL: https://friendlycaptcha.com/integrations/
-  baseURL: https://friendlycaptcha.com
   tags:
   - WordPress
   - Magento
