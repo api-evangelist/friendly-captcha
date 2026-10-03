@@ -50,17 +50,6 @@ paths:
                 $ref: '#/components/schemas/ErrorResponse'
 components:
   schemas:
-    SiteverifyRequest:
-      type: object
-      required:
-      - response
-      properties:
-        response:
-          type: string
-          description: The response value submitted in the frc-captcha-response field
-        sitekey:
-          type: string
-          description: Optional sitekey to verify the puzzle was issued for
     SiteverifyResponse:
       type: object
       required:
@@ -105,6 +94,17 @@ components:
           description: Machine-readable error code (e.g. auth_required, auth_invalid, response_invalid, response_timeout, response_duplicate)
         detail:
           type: string
+    SiteverifyRequest:
+      type: object
+      required:
+      - response
+      properties:
+        response:
+          type: string
+          description: The response value submitted in the frc-captcha-response field
+        sitekey:
+          type: string
+          description: Optional sitekey to verify the puzzle was issued for
   securitySchemes:
     apiKey:
       type: apiKey
