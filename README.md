@@ -1,4 +1,4 @@
-# Friendly Captcha (friendly-captcha)
+# Friendly Captcha
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -64,155 +64,124 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Friendly Captcha is a privacy-first, GDPR-compliant bot protection
-service from Germany that uses proof-of-work cryptographic puzzles
-instead of image-labeling challenges. The widget solves a puzzle in
-the background while a user fills out a form, then submits a token
-the server validates against the Friendly Captcha siteverify endpoint.
-The result includes a risk verdict and additional signal intelligence
-(IP, bot detection, browser identification, anonymization detection).
-Friendly Captcha publishes open-source widgets and framework
-integrations for React, Vue, and Angular, plus pre-built plugins for
-WordPress, Magento, and other CMS platforms.
+Friendly Captcha is a privacy-first, GDPR-compliant bot protection service from Germany that uses proof-of-work cryptographic puzzles instead of image-labeling challenges. The widget solves a puzzle in the background while a user fills out a form, then submits a token the server validates against the Friendly Captcha siteverify endpoint. The result includes a risk verdict and additional signal intelligence (IP, bot detection, browser identification, anonymization detection). Friendly Captcha publishes open-source widgets and framework integrations for React, Vue, and Angular, plus pre-built plugins for WordPress, Magento, and other CMS platforms.
 
-**APIs.json:** [https://raw.githubusercontent.com/api-evangelist/friendly-captcha/refs/heads/main/apis.yml](https://raw.githubusercontent.com/api-evangelist/friendly-captcha/refs/heads/main/apis.yml)
+**Areas:** CAPTCHA · Bot Defense · Privacy · Proof of Work · GDPR · European Hosting · Accessibility
 
-## Scope
+## Friendly Captcha on APIs.io
 
-- **Type:** Index
-- **Position:** Provider
-- **Access:** Public
+Everything profiled for Friendly Captcha is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/friendly-captcha/](https://apis.io/providers/friendly-captcha/)** — or go straight to one of the APIs or properties below.
 
-## Tags
+### APIs (5)
 
-- CAPTCHA
-- Bot Defense
-- Privacy
-- Proof of Work
-- GDPR
-- European Hosting
-- Accessibility
+- [Friendly Captcha Siteverify API](https://apis.io/apis/friendly-captcha/siteverify/) — The siteverify endpoint validates a Friendly Captcha solution token. The server POSTs the token and API key (with optional sitekey) and receives a JSON…
+- [Friendly Captcha Widget](https://apis.io/apis/friendly-captcha/widget/) — The Friendly Captcha widget is the JavaScript component that runs the proof-of-work puzzle in the browser and produces a solution token. It is configured…
+- [Friendly Captcha Framework SDKs](https://apis.io/apis/friendly-captcha/framework-sdks/) — Friendly Captcha publishes open-source wrappers for React, Vue, and Angular that expose the widget as an idiomatic component in each framework, handling…
+- [Friendly Captcha CMS Plugins](https://apis.io/apis/friendly-captcha/plugins/) — Pre-built plugins integrate Friendly Captcha into WordPress, Magento, and other CMS platforms, letting non-developers add privacy-preserving bot defense to…
+- [Friendly Captcha Siteverify API](https://apis.io/apis/friendly-captcha/friendly-captcha-siteverify-api/) — The Siteverify API from Friendly Captcha — 1 operation(s) for siteverify.
 
-## Timestamps
+### Published properties
 
-- **Created:** 2026-05-23
-- **Modified:** 2026-05-23
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-## APIs
+#### Agentic access (1)
 
-### Friendly Captcha Siteverify API
+Which operations an agent can call, which act, and which need a human in the loop.
 
-The siteverify endpoint validates a Friendly Captcha solution
-token. The server POSTs the token and API key (with optional
-sitekey) and receives a JSON response indicating success, risk
-score, IP intelligence, bot detection signals, and any error
-codes. This is the canonical server-side check for protected
-form submissions and API calls.
+- [Friendly Captcha Agentic Access](https://apis.io/agentic-access/friendly-captcha/friendly-captcha-agentic-access/)
 
-- **Human URL:** [https://developer.friendlycaptcha.com/docs/v2/getting-started/verify](https://developer.friendlycaptcha.com/docs/v2/getting-started/verify)
-- **Base URL:** `https://global.frcapi.com/api/v2/captcha/siteverify`
+#### Collections (2)
 
-#### Tags
+Postman and Open Collection request collections.
 
-- Siteverify
-- Token Verification
-- Risk Signals
+- [Friendly Captcha Siteverify API](https://apis.io/collections/friendly-captcha/open-friendly-captcha/)
+- [Friendly Captcha Siteverify API](https://apis.io/collections/friendly-captcha/open-friendly-captcha-siteverify-api/)
 
-#### Properties
+#### Security (2)
 
-- [Documentation](https://developer.friendlycaptcha.com/docs/v2/getting-started/verify)
-- [API Reference](https://developer.friendlycaptcha.com/docs/v2/api-reference)
-- [Endpoint U R L](https://global.frcapi.com/api/v2/captcha/siteverify)
-- [Postman Collection](collections/friendly-captcha.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/friendly-captcha.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
+Authentication, trust centre, and vulnerability disclosure.
 
-### Friendly Captcha Widget
+- [Friendly Captcha Authentication](https://apis.io/security/friendly-captcha/friendly-captcha-authentication/)
+- [Friendly Captcha Domain Security](https://apis.io/security/friendly-captcha/friendly-captcha-domain-security/)
 
-The Friendly Captcha widget is the JavaScript component that runs
-the proof-of-work puzzle in the browser and produces a solution
-token. It is configured via a script tag and a div with the
-sitekey and API endpoint, and can run automatically or on demand.
+#### Plans and pricing (1)
 
-- **Human URL:** [https://developer.friendlycaptcha.com/docs/v2/getting-started/widget](https://developer.friendlycaptcha.com/docs/v2/getting-started/widget)
-- **Base URL:** `https://developer.friendlycaptcha.com/docs/v2/getting-started/widget`
+Published plans, tiers and prices.
 
-#### Tags
+- [Friendly Captcha Plans Pricing](https://apis.io/plans/friendly-captcha/friendly-captcha-plans-pricing/)
 
-- JavaScript
-- Widget
-- Proof of Work
-- Frontend
+#### Rate limits (1)
 
-#### Properties
+Published request limits.
 
-- [Documentation](https://developer.friendlycaptcha.com/docs/v2/getting-started/widget)
-- [Repository](https://github.com/FriendlyCaptcha/friendly-challenge)
-- [Package](https://www.npmjs.com/package/friendly-challenge)
-- [Postman Collection](collections/friendly-captcha.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/friendly-captcha.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
+- [Friendly Captcha Rate Limits](https://apis.io/rate-limits/friendly-captcha/friendly-captcha-rate-limits/)
 
-### Friendly Captcha Framework SDKs
+#### FinOps (1)
 
-Friendly Captcha publishes open-source wrappers for React, Vue,
-and Angular that expose the widget as an idiomatic component in
-each framework, handling lifecycle, callbacks, and token flow.
+What the API costs to run, by operation.
 
-- **Human URL:** [https://developer.friendlycaptcha.com/docs/v2/integrations](https://developer.friendlycaptcha.com/docs/v2/integrations)
-- **Base URL:** `https://developer.friendlycaptcha.com/docs/v2/integrations`
+- [Friendly Captcha Finops](https://apis.io/finops/friendly-captcha/friendly-captcha-finops/)
 
-#### Tags
+## Where to find this API
 
-- React
-- Vue
-- Angular
-- SDK
-
-#### Properties
-
-- [Documentation](https://developer.friendlycaptcha.com/docs/v2/integrations)
-- [S D K React](https://github.com/FriendlyCaptcha/friendly-captcha-react)
-- [S D K Vue](https://github.com/FriendlyCaptcha/friendly-captcha-vue)
-- [S D K Angular](https://github.com/FriendlyCaptcha/friendly-captcha-angular)
-- [GitHub Organization](https://github.com/FriendlyCaptcha)
-- [Postman Collection](collections/friendly-captcha.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/friendly-captcha.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
-
-### Friendly Captcha CMS Plugins
-
-Pre-built plugins integrate Friendly Captcha into WordPress,
-Magento, and other CMS platforms, letting non-developers add
-privacy-preserving bot defense to common forms without writing
-code.
-
-- **Human URL:** [https://friendlycaptcha.com/integrations/](https://friendlycaptcha.com/integrations/)
-- **Base URL:** `https://friendlycaptcha.com`
-
-#### Tags
-
-- WordPress
-- Magento
-- CMS Plugin
-
-#### Properties
-
-- [Integrations Page](https://friendlycaptcha.com/integrations/)
-- [Postman Collection](collections/friendly-captcha.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/friendly-captcha.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
-
-## Common Properties
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
 
 - [Website](https://friendlycaptcha.com/)
 - [Documentation](https://developer.friendlycaptcha.com/)
-- [API Reference](https://developer.friendlycaptcha.com/docs/v2/api-reference)
+- [API reference](https://developer.friendlycaptcha.com/docs/v2/api-reference)
 - [Pricing](https://friendlycaptcha.com/pricing/)
-- [Integrations](https://friendlycaptcha.com/integrations/)
-- [GitHub Organization](https://github.com/FriendlyCaptcha)
 - [Blog](https://friendlycaptcha.com/insights/)
-- [Privacy](https://friendlycaptcha.com/legal/privacy-end-users/)
-- [Contact](https://friendlycaptcha.com/contact/)
-- [L L Ms Txt](https://developer.friendlycaptcha.com/llms.txt)
+- [GitHub](https://github.com/FriendlyCaptcha)
 
-## Maintainers
+## API Evangelist rating
 
-**FN:** Kin Lane
-**Email:** kin@apievangelist.com
+**Kin Score 26.7** — thin · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 64.3 |
+| Contract quality | 47.8 |
+| Contract governance | 0.0 |
+| Operational transparency | 7.9 |
+| Developer ergonomics | 23.8 |
+| Access clarity | 15.8 |
+
+**Agent readiness 17.9** — agent-aware
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | yes |
+| Agentic Access | derived (partial credit) |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | bearer (partial credit) |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | derived (partial credit) |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 15.7** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/friendly-captcha/](https://apis.io/providers/friendly-captcha/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Friendly Captcha: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/friendly-captcha/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
